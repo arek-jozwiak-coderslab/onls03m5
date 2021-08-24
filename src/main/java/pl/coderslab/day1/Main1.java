@@ -1,4 +1,4 @@
-package pl.coderslab;
+package pl.coderslab.day1;
 
 public class Main1 {
 

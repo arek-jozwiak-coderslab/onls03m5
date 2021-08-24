@@ -1,6 +1,11 @@
 package pl.coderslab.day1;
 
-public interface Dao {
+import java.util.List;
+
+public interface Dao<E> {
 
     void delete(int id);
+
+    List<E> getAll();
+
 }

@@ -1,9 +1,4 @@
-package pl.coderslab;
-
-import pl.coderslab.day1.Jumpable;
-import pl.coderslab.day1.Movable;
-
-import java.io.Serializable;
+package pl.coderslab.day1;
 
 public class Dog extends Animal implements Movable, Jumpable {
 
