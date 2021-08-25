@@ -13,6 +13,12 @@ public class LambdaEx2 {
         list.stream()
                 .filter(el -> el instanceof String)
                 .filter(pred)
+
                 .forEach(s -> System.out.println(s));
+
+        list.stream()
+                .filter(el -> el instanceof String)
+                .filter(pred)
+                .forEach(System.out::println);
     }
 }
