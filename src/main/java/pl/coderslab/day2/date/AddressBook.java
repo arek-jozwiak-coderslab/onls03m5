@@ -9,12 +9,14 @@ public class AddressBook {
     public static void main(String[] args) {
         Optional<String> address = findAddressByName("Marek Marecki");
         if (address.isPresent()) {
+            System.out.println(address);
             System.out.println(address.get());
         } else {
             System.out.println("brak");
         }
         Optional<String> nameByAddress = findNameByAddress("Kraków Polna 11");
         Optional<String> nameByAddress2 = findNameByAddress("Kraków Polna 111");
+
         System.out.println(nameByAddress.orElse("brak"));
         System.out.println(nameByAddress2.orElse("brak"));
     }
